@@ -164,6 +164,10 @@ contract BigMouth is ERC721Enumerable, Ownable {
         _revealed = !_revealed;
     }
 
+    function setMintPriceWhitelist(uint256 _mintPriceWhitelist) public onlyOwner {
+        mintPriceWhitelist = _mintPriceWhitelist;
+    }
+
     function setMintPrice(uint256 _mintPrice) public onlyOwner {
         mintPrice = _mintPrice;
     }
